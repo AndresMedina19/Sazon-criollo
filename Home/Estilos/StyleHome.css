@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    background-color: rgba(0, 0, 0, 0); /* Translucido */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    .logo img {
+        height: 130px; /* Tamaño del logo más grande */
+      }
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    color:yellow;
+}
+
+.user-actions a {
+    justify-content: space-between;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.user-actions a:hover {
+    text-decoration: underline;
+    color:yellow;
+}
+
+/* Body */
+main {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.986), rgba(255, 153, 0, 0.877));
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px;/*  Para evitar que el contenido quede debajo del header */
+    height:100%;
+}
+
+.left-content {
+    width: 55%;
+    align-items: center;
+    padding: 10px 150px;
+    .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 50px;
+        color: white;
+      }    
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: white;
+      }   
+      .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        color: white;
+      }
+      .llamado-accion {
+        background-color: yellow; 
+        color: black;             
+        border: none;              
+        padding: 10px 50px;        
+        font-size: 16px;           
+        cursor: pointer;           
+        border-radius: 5px; 
+
+    }
+    
+    .llamado-accion:hover {
+        background-color: gold;  
+    }
+
+}
+
+.right-content {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-content img {
+    width: 95%;
+    height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+    }
+
+    .right-content {
+        margin-top: 20px;
+    }
+}

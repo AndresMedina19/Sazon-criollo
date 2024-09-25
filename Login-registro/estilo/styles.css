@@ -1,0 +1,125 @@
+* { /*  formato a todo la pagina */ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body { /* formato al body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #C2185B;
+
+}
+
+/* estilos independientes según la etiqueta */
+.container { 
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    background-color: #D32F2F;
+    padding: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra la imagen en el contenedor */
+    opacity: 0.1; /* imagen semitransparente */
+    width: 300px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.social-btn {
+    background-color: white;
+    color: rgb(158, 158, 158);
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+
+
+.or {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.login-form .input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.login-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #512DA8;
+    color: #FFEB3B;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-text {
+    margin-top: 20px;
+}
+
+.register-text a {
+    color: #FFEB3B;
+    text-decoration: none;
+}
+
+
+
+

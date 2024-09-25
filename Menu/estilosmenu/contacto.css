@@ -1,0 +1,156 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc300; /* Fondo color amarillo */
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.container {
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la ventana */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+}
+
+.header {
+    position: relative;
+    height: 160px; /* Ajusta la altura según lo que necesites */
+}
+
+.stripe1, .stripe2, .stripe3, .stripe4 {
+    position: absolute;
+    left: 0;
+    width: 100%; /* Cambiado a 100% */
+    height: 50px; /* Ajusta la altura de cada franja */
+    transform: skewY(-30deg); /* Hace que se vea diagonal */
+    transform-origin: top left; /* Punto de origen de la transformación */
+}
+
+.stripe1 {
+    background-color: #581845; /* Color púrpura */
+    top: 250px; /* Ajustado */
+}
+
+.stripe2 {
+    background-color: #900c3f; /* Color rojo */
+    top: 300px; /* Ajustado */
+}
+
+.stripe3 {
+    background-color: #c70039; /* Color naranja */
+top: 350px; /* Ajustado */
+}
+
+.stripe4 {
+    background-color: #ff5733; /* Color amarillo */
+    top: 400px; /* Ajustado */
+}
+
+.map-section {
+    display: flex;
+    flex-direction: column; /* Para apilar imagen y texto */
+    align-items: center; /* Centra horizontalmente */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.map-image {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #000;
+}
+
+.address {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.contact-section {
+    background-color: #ffae00;
+    margin: 20px auto; /* Esto debe centrar horizontalmente */
+    border: 2px solid #000;
+    width: 60%; /* Ajusta este valor según sea necesario */
+    border-radius: 50px; /* Bordes curvados */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.contact-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    padding: 1px;
+    display: inline-block;
+    background-color: #ffae00;
+    margin-top: 40px;
+}
+
+.contact-icon {
+    height: 90px; /* Ajusta la altura al tamaño del texto */
+    width: 90px; /* La misma medida para mantener la imagen proporcional */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    vertical-align: middle; /* Alinea la imagen al centro del texto */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.footer {
+    margin-top: 90px;
+    background-color: #ffae00;
+    padding: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    gap: 10px; 
+}
+
+.comment-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffae00;
+    border: 1px solid #ffa500;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    margin-right: 20px; /* Espacio entre la caja de comentarios y el texto de contacto */
+}
+
+.comment-icon {
+    height: 80px; /* Tamaño ajustado según el área de texto */
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+textarea {
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    height: 30px; /* Ajusta la altura según sea necesario */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff3001; /* Cambia el color según tu diseño */
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500; /* Cambia el color al pasar el ratón */
+}
+
+.contact-details {
+    font-size: 18px;
+    color: #000;
+}
