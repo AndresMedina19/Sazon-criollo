@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc300; /* Fondo amarillo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Estilo de las franjas diagonales */
+.stripes {
+    position: relative;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.stripe1, .stripe2, .stripe3, .stripe4 {
+    position: absolute;
+    left: 0;
+    width: 100%; /* Cambiado a 100% */
+    height: 50px; /* Ajusta la altura de cada franja */
+    transform: skewY(-30deg); /* Hace que se vea diagonal */
+    transform-origin: top left; /* Punto de origen de la transformación */
+}
+
+.stripe1 {
+    background-color: #581845; /* Color púrpura */
+    top: 250px; /* Ajustado */
+}
+
+.stripe2 {
+    background-color: #900c3f; /* Color rojo */
+    top: 300px; /* Ajustado */
+}
+
+.stripe3 {
+    background-color: #c70039; /* Color naranja */
+top: 350px; /* Ajustado */
+}
+
+.stripe4 {
+    background-color: #ff5733; /* Color amarillo */
+    top: 400px; /* Ajustado */
+}
+
+
+/* Título */
+.title {
+    font-size: 48px;
+    color: #000;
+    margin-top: 0;
+}
+
+/* Sección principal */
+.main-content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dish-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Botones de acción */
+.actions {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffef82;
+    border: 2px solid #ffef82;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 20px;
+}
+
+button:hover {
+    background-color: #ffe066;
+}
+
+.add-btn, .remove-btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.cart-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Estilos para el botón "Volver" */
+.back-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.back-button {
+    background-color: #ffef82;
+    border: 2px solid #ffef82;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-button:hover {
+    background-color: #ffe066;
+}

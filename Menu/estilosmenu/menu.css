@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc300; /* Fondo color amarillo */
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+
+}
+
+.container {
+    
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la ventana */
+    padding: 20px;
+}
+
+.header {
+    position: relative;
+    height: 160px; /* Ajusta la altura según lo que necesites */
+}
+
+.menu-title {
+    position: absolute;
+    font-size: 90px;
+    font-weight: bold;
+    color: #000;
+    margin-top: -60px;
+    z-index: 2;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin-left: 800px; /* Espacio entre la imagen y el texto */
+}
+
+.stripe1, .stripe2, .stripe3, .stripe4 {
+    position: absolute;
+    left: 0;
+    width: 100%; /* Cambiado a 100% */
+    height: 50px; /* Ajusta la altura de cada franja */
+    transform: skewY(-30deg); /* Hace que se vea diagonal */
+    transform-origin: top left; /* Punto de origen de la transformación */
+}
+
+.stripe1 {
+    background-color: #581845; /* Color púrpura */
+    top: 250px; /* Ajustado */
+}
+
+.stripe2 {
+    background-color: #900c3f; /* Color rojo */
+    top: 300px; /* Ajustado */
+}
+
+.stripe3 {
+    background-color: #c70039; /* Color naranja */
+top: 350px; /* Ajustado */
+}
+
+.stripe4 {
+    background-color: #ff5733; /* Color amarillo */
+    top: 400px; /* Ajustado */
+}
+
+.menu-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    
+    border-radius: 20px;
+    width: 240px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    margin-right: 300px; /* Espacio entre la imagen y el texto */
+    align-items: center;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    
+}
+
+.menu-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.menu-item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+.back-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}

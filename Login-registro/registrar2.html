@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+    <link rel="stylesheet" href="estilo/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="imagenes/logo_sin_fondo.png" alt="Logo">
+            </div>
+            <h2>Registra tus datos</h2>
+
+            <form class="login-form" id="registerForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Nombre: Evelio Jaramillo" required>
+                </div>
+                <div class="input-group">
+                    <input type="number" placeholder="Celular: +57 300 111 2233" required>
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option>Cédula Ciudadanía</option>
+                        <option>Pasaporte</option>
+                        <option>Cédula de Extranjería</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="number" placeholder="# documento: 10772223344" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="watermark">
+        <img src="imagenes/logo_sin_fondo.png" alt="Plato de comida">
+    </div>
+    </div>
+</body>
+
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#registerForm").submit(function(event) {
+        event.preventDefault();  // Prevenir el envío por defecto del formulario
+
+        var nombre = $("#nombre").val();
+        var celular = $("#celular").val();
+        var tipo_documento = $("#tipo_documento").val();
+        var numero_documento = $("#numero_documento").val();
+        var contrasena = $("#contrasena").val();
+
+        $.ajax({
+            url: "http://localhost:5000/registro",  // Ruta hacia el backend
+            type: "POST",
+            data: JSON.stringify({
+                nombre: nombre,
+                celular: celular,
+                tipo_documento: tipo_documento,
+                numero_documento: numero_documento,
+                contrasena: contrasena
+            }),
+            contentType: "application/json",
+            success: function(response) {
+                if (response.success) {
+                    alert("¡Registro exitoso!");
+                } else {
+                    alert("Error en el registro: " + response.error);
+                }
+            }
+        });
+    });
+</script>
+
+</html>
